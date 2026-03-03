@@ -1,7 +1,7 @@
 //Main.java
 
 import entidades.Lanche;
-import java.util.Scanner
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
             System.out.println("5 - Atualizar descrição");
             System.out.println("6 - Finalizar");
             System.out.println("Digite a opção desejada:");
-
+            String opcao = sc.nextLine();
         }
 
     }

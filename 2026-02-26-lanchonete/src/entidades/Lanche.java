@@ -50,6 +50,4 @@ public class Lanche {
                 + "\nDisponibilidade: " + disponivel
                 + "\nEstoque: " + estoque;
     }
-
-
 }
