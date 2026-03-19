@@ -75,7 +75,8 @@ public class Main {
                     System.out.println("Finalizando o programa...");
                     sc.close();
                     System.exit(0);
-            }
+            } else {
+                System.out.println("Opção inválida. Por favor, escolha uma opção válida.");
 
         }
 
