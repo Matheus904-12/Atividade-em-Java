@@ -4,6 +4,11 @@ public class Cachorro extends Animal {
         super(nome, idade, raca, cor, peso);
     }
 
+    @Override
+    public void fazerSom() {
+        System.out.println("Au au");
+    }
+
     public void latir() {
         System.out.println("Au au");
     }

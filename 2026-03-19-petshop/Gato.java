@@ -4,6 +4,11 @@ public class Gato extends Animal {
         super(nome, idade, raca, cor, peso);
     }
 
+    @Override
+    public void fazerSom() {
+        System.out.println("Miau");
+    }
+
     public void miar() {
         System.out.println("Miau");
     }

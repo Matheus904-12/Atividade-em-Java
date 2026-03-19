@@ -61,6 +61,10 @@ public class Animal {
         System.out.println("Zzzzzz");
     }
 
+    public void fazerSom() {
+        System.out.println("O animal faz um som genérico.");
+    }
+
     public void brincar() {
         System.out.println("Brincando");
     }

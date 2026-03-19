@@ -1,21 +1,28 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Petshop UMC ===");
+        System.out.println("=== Petshop UMC (Polimorfismo) ===");
 
-        Gato gato = new Gato("Mimi", 2, "Persa", "Branco", 4.5);
-        Cachorro cachorro = new Cachorro("Thor", 3, "Golden", "Dourado", 30.0);
-        Peixe peixe = new Peixe("Nemo", 1, "Peixe-Palhaço", "Laranja", 0.1);
+        // Criando uma lista de Animais (Polimorfismo)
+        List<Animal> animais = new ArrayList<>();
+        
+        animais.add(new Gato("Mimi", 2, "Persa", "Branco", 4.5));
+        animais.add(new Cachorro("Thor", 3, "Golden", "Dourado", 30.0));
+        animais.add(new Peixe("Nemo", 1, "Peixe-Palhaço", "Laranja", 0.1));
 
-        System.out.println("\nInformações do Gato:");
-        System.out.println("Nome: " + gato.getNome());
-        gato.miar();
+        // Percorrendo a lista e chamando o mesmo método para todos
+        System.out.println("\n--- Sons des Animais no Petshop ---");
+        for (Animal animal : animais) {
+            System.out.print(animal.getNome() + " diz: ");
+            animal.fazerSom(); // Aqui acontece o POLIMORFISMO! Cada um faz o seu som.
+        }
 
-        System.out.println("\nInformações do Cachorro:");
-        System.out.println("Nome: " + cachorro.getNome());
-        cachorro.latir();
-
-        System.out.println("\nInformações do Peixe:");
-        System.out.println("Nome: " + peixe.getNome());
-        peixe.soltarBolhas();
+        System.out.println("\n--- Hora de Dormir ---");
+        for (Animal animal : animais) {
+            System.out.print(animal.getNome() + ": ");
+            animal.dormir(); // Esse método é herdado da classe Animal
+        }
     }
 }

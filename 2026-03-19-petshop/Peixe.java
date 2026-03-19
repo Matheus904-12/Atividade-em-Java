@@ -4,6 +4,11 @@ public class Peixe extends Animal {
         super(nome, idade, raca, cor, peso);
     }
 
+    @Override
+    public void fazerSom() {
+        System.out.println("Glub glub...");
+    }
+
     public void nadar() {
         System.out.println("Nadando...");
     }
