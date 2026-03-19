@@ -1,51 +1,47 @@
-# Atividades em Java (UMC)
-Repositorio organizado por aula para facilitar estudo e revisao.
-## Estrutura final (3 atividades)
-- `2026-03-02-poo-basico-lanche-carro/`
-- `2026-03-02-poo-livro-estoque/`
-- `2026-02-26-lanchonete/`
-## O que foi feito em cada aula
-### 1) `2026-03-02-poo-basico-lanche-carro`
-- Pratica de POO basica com classes simples.
-- Classe `Lanche` com atributos (`nome`, `preco`, `descricao`) e metodo `exibir()`.
-- Classe `Carro` com atributos (`modelo`, `marca`, `ano`) e metodo `exibirInformacoes()`.
-- `Main` instancia objetos e mostra dados no console.
-### 2) `2026-03-02-poo-livro-estoque`
-- Classe `Livro` com construtor e controle de estoque.
-- Metodos principais:
-  - `emprestaLivro(int quantidade)`
-  - `devolveLivro(int quantidade)`
-  - `valorTotal()`
-  - `exibirInformacoes()`
-- `Main` cria livros, simula emprestimo/devolucao e exibe resultado.
-### 3) `2026-02-26-lanchonete`
-- Atividade de lanchonete com `Main` e entidade `Lanche` em `src/entidades`.
-- Aplicacao com menu no console para:
-  - realizar pedido
-  - atualizar estoque
-  - alterar preco e descricao
-  - consultar informacoes do lanche
-## Como compilar e executar
-### Atividade 1: POO basico
+# 🚀 Atividades em Java - UMC
+
+Este repositório contém as atividades desenvolvidas durante as aulas de Java na UMC (Universidade Mogi das Cruzes). O objetivo é organizar o aprendizado de Programação Orientada a Objetos (POO) e estruturas de dados.
+
+## 📂 Estrutura do Repositório
+
+O projeto está organizado por pastas datadas, cada uma representando uma aula ou atividade específica:
+
+### 🆕 Atividades Recentes
+*   **`2026-03-17-gerenciador-crud/`**: Sistema completo de gerenciamento de produtos com operações CRUD (Create, Read, Update, Delete) utilizando `ArrayList`.
+*   **`2026-03-12-crudalunos/`**: Prática de manipulação de listas com um sistema de cadastro de alunos.
+
+### 📚 Histórico de Aulas
+*   **`2026-03-05-ArrayList/`**: Introdução ao uso da classe `ArrayList` em Java.
+*   **`2026-03-02-poo-livro-estoque/`**: Exercício de controle de estoque de livros com métodos de empréstimo e devolução.
+*   **`2026-03-02-poo-basico-lanche-carro/`**: Primeiros passos em POO com classes `Lanche` e `Carro`.
+*   **`2026-02-26-lanchonete/`**: Sistema de pedidos para uma lanchonete com menu interativo.
+*   **`2026-02-20-lanchonete/`**: Versão inicial do sistema de lanchonete.
+
+---
+
+## 🛠️ Como Executar
+
+Para executar qualquer uma das atividades, navegue até a pasta desejada e utilize os comandos `javac` e `java`.
+
+### Exemplo: Gerenciador de Produtos (CRUD)
 ```bash
-cd /home/bcr/Projetos/Atividades/UMC/Atividade-em-Java/2026-03-02-poo-basico-lanche-carro
-mkdir -p out
-javac -d out src/*.java
-java -cp out Main
+cd 2026-03-17-gerenciador-crud
+javac *.java
+java Main
 ```
-### Atividade 2: Livro e estoque
+
+### Exemplo: CRUD de Alunos
 ```bash
-cd /home/bcr/Projetos/Atividades/UMC/Atividade-em-Java/2026-03-02-poo-livro-estoque
-mkdir -p out
-javac -d out src/*.java
-java -cp out Main
+cd 2026-03-12-crudalunos/CrudAlunos
+javac -d bin src/*.java src/entidades/*.java
+java -cp bin src.Main
 ```
-### Atividade 3: Lanchonete
-```bash
-cd /home/bcr/Projetos/Atividades/UMC/Atividade-em-Java/2026-02-26-lanchonete
-mkdir -p out
-javac -d out src/Main.java src/entidades/Lanche.java
-java -cp out Main
-```
-## Observacao
-Se o comando `java` ou `javac` nao existir no terminal, instale o JDK e tente novamente.
+
+---
+
+## 🔧 Requisitos
+*   Java Development Kit (JDK) instalado (versão 17 ou superior recomendada).
+*   Configuração correta das variáveis de ambiente (`JAVA_HOME`).
+
+## 📝 Observações
+O repositório foi limpo para remover arquivos desnecessários (como o JDK completo) e manter apenas o código-fonte e configurações essenciais do projeto.
