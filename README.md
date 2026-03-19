@@ -7,6 +7,7 @@ Este repositório contém as atividades desenvolvidas durante as aulas de Java n
 O projeto está organizado por pastas datadas, cada uma representando uma aula ou atividade específica:
 
 ### 🆕 Atividades Recentes
+*   **`2026-03-19-petshop/`**: Atividade de Herança e Interfaces. Refatoração de classes (`Gato`, `Cachorro`, `Peixe`) usando a classe pai `Animal` e exemplo de Interface em Kotlin (`Pet.kt`).
 *   **`2026-03-17-gerenciador-crud/`**: Sistema completo de gerenciamento de produtos com operações CRUD (Create, Read, Update, Delete) utilizando `ArrayList`.
 *   **`2026-03-12-crudalunos/`**: Prática de manipulação de listas com um sistema de cadastro de alunos.
 
