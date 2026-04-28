@@ -1,0 +1,3 @@
+ELETRONICO;0;Samsung Galaxy A56 256GB 8GB Ram;1800.0;50;12
+VESTUARIO;1;Camisa Insider Tech Daily T-Shirt Preta;60.0;2;G
+ALIMENTO;2;Barra de Cereal Nutri+;5.0;1;15/05/2026
